@@ -1,13 +1,13 @@
-const addButton = document.querySelector('.addButton');
-var input = document.querySelector('.input');
-const container = document.querySelector('.container');
+const addButton = document.getElementById('addButton');
+var input = document.getElementById('input');
+const container = document.getElementById('container');
 
 class item {
     constructor(itemName){
        this.createDiv(itemName);
     }
     createDiv(itemName){
-        let input =createDiv ('.input');
+        input =createDiv ('input');
        input.value = itemName;
        input.disabled = true;
        input.classList.add('item_input');
